@@ -9,12 +9,21 @@
     text-decoration: none;
     color: inherit;
   }
-  
+  section{
+    overflow: hidden;
+  }
+  .d-flex{
+    align-items: center;
+    justify-content: center;
+  }
   .container {
     width: 1200px;
     margin: 0 auto;
   }
-  
+  .wrapper__content{
+    width: 100%;
+    overflow: hidden;
+  }
   .nav-icon {
     display: flex;
     margin-left: 100px;
@@ -83,15 +92,13 @@
     
   }
   .sp3{
-    margin-top: 150px;
     display: flex;
     flex-wrap: wrap;
   }
 .centr {
     max-width: 405px;
     min-height: 96px;
-    margin-top: 150px;
-    margin-left: 447px;
+    margin: 150px auto 0;
     font-style: italic;
   }
   
@@ -120,10 +127,10 @@
   }
   
   .centr1 {
-    max-width: 330px;
-    min-height: 48px;
-    margin-top: 150px;
-    margin-left: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-block: 50px;
   }
   
   .sec-a5 {
@@ -132,10 +139,10 @@
   }
   
   .a6 {
-    max-width: 208px;
-    min-height: 48px;
-    margin-top: 150px;
-    margin-left: 450px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding-block: 50px;
   }
   
   .a11 {
@@ -200,7 +207,6 @@
     margin-left: 23px;
   }
   .a29{
-    width: 300px;
     display: flex;
     gap: 10px;
     flex-direction: column;
@@ -261,7 +267,7 @@
   }
   .a31{
     display: grid;
-    grid-template-columns:1fr 1fr 1fr 1fr ;
+    grid-template-columns: 2fr 3fr 4fr 4fr;
   }
   .a88{
     max-width: 150px;
@@ -367,7 +373,7 @@
     }
     .a150{
       margin-top: 20px;
-      margin-left: 150px;
+      
     }
     .a50{
       display: flex;
@@ -389,9 +395,7 @@
   }
   
   @media screen and (max-width: 830px){
-    .centr,.centr1,.a1,.a6{
-      margin: auto;
-    }
+    
     
     .a8,.a9{
       margin-top: 0;
@@ -472,4 +476,25 @@
       flex-wrap: wrap;
       flex-direction: column;
   }
+  .a1{
+    margin:0;
+    display: flex;
+    
+  }
 } 
+
+@media screen and (max-width:991px) {
+  .wraper{
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+  .nav-icon2{
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 25px;
+  }
+ 
+}
